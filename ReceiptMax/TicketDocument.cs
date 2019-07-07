@@ -89,6 +89,7 @@ namespace ReceiptMax
             x = 0;
             var szf = ppea.Graphics.MeasureString(text, font);
             x = (Width - szf.Width) / 2;
+
             ppea.Graphics.DrawString(text, font, brush, new PointF(x, y));
             x = 0;
             y += szf.Height;

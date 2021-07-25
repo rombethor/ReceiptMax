@@ -39,7 +39,7 @@ namespace ReceiptMax
         {
             pd.PrinterSettings.PrinterName = printer;
             pd.DefaultPageSettings.Landscape = false;
-            PaperWidth = pd.DefaultPageSettings.PaperSize.Width * pd.DefaultPageSettings.PrinterResolution.X;
+            PaperWidth = pd.DefaultPageSettings.PaperSize.Width; // * pd.DefaultPageSettings.PrinterResolution.X;
         }
 
         public void Print(TicketDocument td, string PrinterName = null)

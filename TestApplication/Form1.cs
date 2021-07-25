@@ -14,13 +14,11 @@ namespace TestApplication
     public partial class Form1 : Form
     {
         TicketPrinter ticketPrinter;
-        string ImageFile;
 
         public Form1()
         {
             InitializeComponent();
 
-            ImageFile = "";
             ticketPrinter = new TicketPrinter();
         }
 

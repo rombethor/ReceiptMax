@@ -21,8 +21,9 @@ namespace TestApplication
 
         protected override PrintPageEventArgs Ticket(object sender)
         {
+            WriteCenteredLine("## ReceiptMax Print ##");
             WriteCenteredLine("--- Daniel Thorne ---");
-            WriteWrappedLine("This a a test and had better work.  It may be due to the args not being passed through.");
+            WriteWrappedLine("This a a test implementation of TicketDocument and should print wrapped on any thermal printer.");
             if(!string.IsNullOrEmpty(ImageFile))
                 DrawImage(ImageFile);
             if (!string.IsNullOrEmpty(Message))
